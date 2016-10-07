@@ -32,6 +32,9 @@ tar -xaf "${CACHED_DOWNLOAD}" --strip-components=1 --directory "${ELASTICSEARCH_
 
 echo "http.port: ${ELASTICSEARCH_PORT}" >> ${ELASTICSEARCH_DIR}/config/elasticsearch.yml
 
+# install required plugins
+~/el/bin/plugin install analysis-icu
+
 # Make sure to use the exact parameters you want for ElasticSearch and give it enough sleep time to properly start up
 nohup bash -c "${ELASTICSEARCH_DIR}/bin/elasticsearch 2>&1" &
 sleep "${ELASTICSEARCH_WAIT_TIME}"
