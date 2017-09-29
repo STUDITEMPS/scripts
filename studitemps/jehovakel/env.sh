@@ -1,0 +1,7 @@
+export ELIXIR_VERSION=1.5.1
+export ERLANG_VERSION=20.0
+export PG_PORT=5436
+export PHANTOMJS_VERSION=2.1.1
+export MIX_ENV=test
+export LOGGY_STACKS=1
+export NODE_VERSION=8.6.0
