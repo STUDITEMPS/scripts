@@ -33,3 +33,8 @@ cd -
 #######################
 cd apps/unternehmensportal
 mix ecto.reset
+cd -
+
+cd apps/leistungsnachweis
+mix ecto.reset
+cd -
